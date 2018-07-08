@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+  	<!-- font awesome for facebook and other icons -->
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+  	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="..\Css\contactUs.css">	
+
+	<title>Bhatnagar Dental Clinic</title>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body>
+	<header>	
+		
+		<div class = "top">
+
+
+			
+			<!-- Responsive NavBar -->
+			<nav id="navbar-custom" class="navbar  navbar-expand-lg navbar-light fixed-top myNav">
+				  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+				  	<span> </span>
+            		<span> </span>
+            		<span> </span>
+				    <!-- <span class="navbar-toggler-icon"></span> -->
+				  </button>
+
+				  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+				  	
+				    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+				      <li class="nav-item active">
+				        <a class="nav-link" href="../Html/home.html">Home </a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="../Html/aboutUs.html">About Us</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="../Html/dentalServices.html">Dental Services</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="../Html/gallery.html">Gallery</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="../Html/contactUs.html">Contact Us</a>
+				      </li>
+
+				    </ul>
+				    <ul class="navbar-nav my-2 my-lg-0">
+					 	<li class="nav-item">
+				        	<a class="nav-link" href="#">Call Us &nbsp;<i class="fas fa-mobile-alt phone"></i> +918894402687</a>
+				      	</li>
+								     	
+			     	</ul>
+				  </div>
+			  <!-- </div> -->
+			</nav>
+
+	<!-- Responsive NavBar -->
+
+			<div class= "container top-pic">
+				<div class="row">
+					<div class="col">
+						<div class="has">
+							<a href="" target="_blank" class="has-logo first-child last-child">
+								<img src="..\Images\logo.png">
+							</a>
+						</div>
+					</div>
+				</div>
+		 	</div>
+		</div>
+	</header>
+
+
+	<!-- <div class="jumbo-divider">
+		<span>Call Us Today +918894402687</span>
+	</div> -->
+
+	<div class = "fadingImage">
+	   <div class ="container">
+	   		<div class="welcomeTextCenter">
+	   			Contact Us Today!!
+	   		</div>
+	   		<div class="arrow">
+	   			<i class="far fa-arrow-alt-circle-down"></i>
+	   		</div>
+	   </div>
+	</div>
+
+	
+	<div class= "container before-form-is-clicked">
+		<div class="heading">
+			<h2>GIVE US A SHOUT</h2>
+			<hr>
+			<h5>Use the form below to drop us an e-mail. Old-fashioned phone calls work too  </h5>
+			<h5>+918894402687</h5>
+			
+			
+		</div>
+
+	
+		<div class="row">
+			
+			<div class= "form-box">
+				<div class='col-sm-4 email-image'>
+					<img src="../Images/email3.png" class="img-fluid">
+				</div>
+				<div class="my-form col-sm-8" >
+					<form id = "contactForm" name="contactForm">
+						<div class="form-group">
+						<input class="form-control" type="text" name="name" maxlength="50" required="true" placeholder="Name" id="name">
+						</div>
+						<div class="form-group">
+							<input class="form-control" id="email" type="email" name="email" required="true" placeholder="Email-id" size="64" maxLength="64" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+						</div>
+						<div class="form-group">
+							<input class="form-control" type="tel" id="phone" name="phone" size = "20" minlength="9" maxlength = "15" pattern='^\+?\d{0,13}' placeholder="Phone Number">
+						</div>
+						<div class="form-group">
+							<textarea class="form-control" name="comment" id = "comment" maxlength="300" placeholder="What can we do for you?"></textarea>
+						</div>
+						<div class="form-group">
+							<div class="g-recaptcha" style="width: 100%" data-sitekey="6LeNbmAUAAAAAJvVh1jSXAOhxQkVpZctt-ZjCWU7"></div>
+							<div class="recaptcha-validation">
+								<span class = "exclaim"> ! </span>Please click on the Recaptcha!!
+							</div>
+						</div>
+						<div class="form-group">
+							<button type="submit" value="submit" id="submit" class="btn btn-warning">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class = "container after-form-is-clicked">
+		<h2>Thank You</h2>
+		<hr>
+		<h4>We appreciate you taking the time to complete this information. We will get in touch with you shortly.</h4>
+	</div>
+
+	<footer>
+		<div class="location">
+			<div class = "container">
+				<!-- <h1 >Our Location</h1> -->
+				<hr>
+				<div class = "row">
+					<div class = "col-lg">
+						<iframe class = "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.6322130679278!2d76.63266421444833!3d32.05214512789864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3904b778beeee81d%3A0x57eba803bfd0aa5f!2sBhatnagar+Dental+Clinic!5e0!3m2!1sen!2sus!4v1525451688977" height="450" frameborder="0"  allowfullscreen>
+						</iframe>
+					</div>
+					<div class = "col-lg loc-right">
+
+						<h2 class = "touch">Get In Touch With Us</h2>
+						<br>
+
+						<i class="far fa-envelope-open"></i>
+						
+						<br>
+
+						<address>
+							Bhatnagar Dental Clinic<br>
+							Paprola Distt Kangra HP<br>
+							176115
+						</address>
+
+						<br>
+						<i class="fas fa-mobile-alt phone"></i> +918894402687
+						<br>
+						<i class="fas fa-mobile-alt phone"></i> &nbsp;+917018302323
+
+					</div>
+						
+				</div>
+				
+			</div>
+		</div>	
+		<!-- Social -->
+		<div class="social">
+			<a href="https://www.facebook.com/BhatnagarDentalClinic/" target = "_blank"><i class="fab fa-facebook-square"></i></a>
+			<span class="social-items">FACEBOOK</span>
+
+			<a href="../Html/contactUs.html"><i class="fas fa-at"></i></a>
+			<span class="social-items">EMAIL</span>
+
+			<a href=""><i class="fab fa-instagram"></i></a>
+			<span class="social-items">INSTAGRAM</span>
+		</div>
+	</footer>
+
+	
+	<script type="text/javascript" src= "..\Js\contactUs.js"></script>
+
+</body>
+</html>

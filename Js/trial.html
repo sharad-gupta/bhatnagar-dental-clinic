@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>trial</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+
+	<script type="text/javascript">
+		alert("i m in js");
+		$(document).ready(function(){
+			alert("top");
+			$.ajax({
+	                    type : "POST",
+	                    url : "http://52.87.74.229:9098/interaction/email",
+	                    // data : $("#contactForm").serialize(),
+	                    contentType: "application/json",
+	                    dataType: "json",
+	      				success : function(response) {
+	                        alert(response);
+	         				console.log("OUR FORM SUBMITTED CORRECTLY");           	
+	                    }
+	        });
+	        alert("hello");
+		});	
+			
+	</script>
+</head>
+<body>
+
+
+	hello
+</body>
+</html>
